@@ -1,0 +1,1 @@
+tonos-cli body --abi Contract.abi.json "funcName" "{\"param1\":value}" | grep body | cut -d' ' -f3
