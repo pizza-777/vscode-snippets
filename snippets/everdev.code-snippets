@@ -15,5 +15,26 @@
 	 		"everdev c d multisig.abi.json -s $signer -v 1000e9 -i \"owners:[0x$pubkey],reqConfirms:1\"",	 		
 	 	],
 	 	"description": "create a surf multisig wallet"
-	}
+	},
+	"reset network": {
+	 "scope": "shellscript",
+	 "prefix": "everdev se reset",
+	 "body": [
+		"everdev se reset"
+	 ]
+	},
+	"everdev network default": {
+	 "scope": "shellscript",
+	 "prefix": "everdev network default $se",
+	 "body": [
+		"everdev network default se"
+	 ]
+	},
+	"everdev sol compile": {
+	 "scope": "shellscript",
+	 "prefix": "everdev sol compile",
+	 "body": [
+		"everdev sol compile $Contract.sol"
+	 ]
+	},	
 }
